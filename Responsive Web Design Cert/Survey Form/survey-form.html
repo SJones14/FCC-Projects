@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="utf-8"/>
+    <title>JoJosCards Response Form</title>
+  </head> 
+
+  <body>
+    <h1 class="title" id="title">JoJosCards Response Form</h1>
+    <p class="description" id="description">Thank you for supporting our business!</p>
+
+    <form id="survey-form">
+      <fieldset >
+        <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter Name" required/></label>
+        <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter Email" required/></label>
+        <label for="age" id="number-label">Age: <input type="number" id="number" min="13" max="120" placeholder="Enter Age" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What product(s) did you purchase from us?</legend>
+        <select id="dropdown">
+          <option>(Select a Product)</option>
+          <option id="singles" value="singles">Singles</option>
+          <option id="sealed" value="sealed">Sealed</option>
+          <option id="both" value="both">Both</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Would you reccomend us to others?</legend>
+        <label for="yes"><input type="radio" id="yes" name="rec" value="yes" checked/>Yes</label>
+        <label for="maybe"><input type="radio" id="maybe" name="rec" value="maybe" />Maybe</label>
+        <label for="no"><input type="radio" id="no" name="rec" value="no" />No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What other products would you like to see from us?</legend>
+        <label for="onePiece"><input type="checkbox" id="onePiece" value="onePiece" />One Piece</label>
+        <label for="dragonball"><input type="checkbox" id="dragonball" value="dragonball" />DragonBall</label>
+        <label for="pixar"><input type="checkbox" id="pixar" value="pixar" />Pixar</label>
+        <label for="starWars"><input type="checkbox" id="starWars" value="starWars" />Star Wars</label>
+        <label for="unionArena"><input type="checkbox" id="unionArena" value="unionArena" />Union Arena</label>
+      </fieldset>
+
+      <p class="suggest">Any other comments/suggestions?</p>
+      <textarea cols="50" rows="4"></textarea>
+      <input type="submit" id="submit" value="Submit" />
+
+    </form>
+  <body>
+
+  <footer>
+    <p><a href="https://store.tcgplayer.com/sellerfeedback/cc69acd9">TCGPlayer Store</a></p>
+    <p><a href="https://www.whatnot.com/user/jojoscards">Whatnot Store</a></p>
+  </footer>
+</html>
